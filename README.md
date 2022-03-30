@@ -24,6 +24,7 @@
         let discription = prompt("Опишите своё слово!");
 
         alert('Внимание!!! Передай телефон игроку, который будет угадывать слово.');
+        alert(discription);
 
         let answerArray = [];
         for (let i = 0; i < word.length; i++) {
