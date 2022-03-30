@@ -1,9 +1,7 @@
 # maxlera.github.io
 
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,26 +20,10 @@
                             Приятной игры!`);
 
         let word = prompt("Введите своё задуманое слово !");
+        word = word.toLocaleLowerCase();
         let discription = prompt("Опишите своё слово!");
 
         alert('Внимание!!! Передай телефон игроку, который будет угадывать слово.');
-        // let words = [
-        //     "javascript",
-        //     "horse",
-        //     "watch",
-        //     "monkey",
-        //     "pancake",
-        //     "rose",
-        //     "peach",
-        //     "watermelon",
-        //     "laptop",
-        //     "milk",
-        //     "fish",
-        //     "smartphone",
-        //     "window",
-        //     "cup"
-        // ];
-        // let word = words[Math.floor(Math.random() * words.length)];
 
         let answerArray = [];
         for (let i = 0; i < word.length; i++) {
@@ -52,10 +34,10 @@
         let number = 0;
 
         while (remainingLetters > 0) {
-            alert("Подсказка - " + discription);
             alert(answerArray.join(" "));
         
             let guess = prompt("Пожалуйста, введите букву или нажмите 'Отмена' для остановки игры.");
+            guess = guess.toLocaleLowerCase();
                 if (guess === null) {
                     alert("До встречи! В следующей игре!");
                     break;
