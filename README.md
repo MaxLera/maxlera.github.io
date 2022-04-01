@@ -1,5 +1,15 @@
 # maxlera.github.io
-function greatings(){
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function for Hangman</title>
+</head>
+<body>
+    
+    <script>
+        function greatings(){
             alert("Приветствую Вас в игре 'Виселица'!");
 
             alert(`                 Правила игры! 
@@ -108,3 +118,8 @@ function greatings(){
 
         conrgats();
         repeat();
+
+    </script>
+
+</body>
+</html>
